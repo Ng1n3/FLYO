@@ -197,7 +197,7 @@ ul.nav-options {
     margin-top: 0px;
     gap: var(--sp-10);
     align-items: center;
-    color:  var(--clr-accent-moderate-cyan);;
+    color:  var(--clr-accent-moderate-cyan);
     border-bottom: 2px solid var(--clr-neutral-light-gray);
     padding-bottom: var(--sp-07);
 }
@@ -356,7 +356,119 @@ footer li:hover {
 }
 
 
+/*MOBILE VIEW*/
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .container {
+        max-width: 100%;
+
+    }
+
+        
+        
+header {
+    align-items: center;
+    padding: var(--sp-50) var(--sp-20)
+}
+
+.logo-container img {
+    width: 80px;
+}
 
 
+    ul.nav-options {
+        display: flex;
+        gap: var(--sp-20);
+        font-family: var(--ff-heading);
+        font-weight: var(--fw-level-400);
+        font-size: var(--fs-body-paragraphs)
+    }
+
+    .section-1 {
+        text-align: center;
+        padding: var(--sp-50) var(--sp-40);
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .illustration {
+        order: 1;
+    }
+
+    .section-1-text-details, .section-2-text-details {
+        order: 2;
+        margin-top: var(--sp-10)
+    }
+
+    .section-1-text-details h, .section-2-text-details h1 {
+        font-size: var(--fs-headings-2);
+    }
 
 
+    .section-1-text-details input {
+        width: 100%;
+    }
+    .section-1-text-details button {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: var(--sp-10);
+    }
+
+    .section-2 {
+        background-image: url(images/bg-curve-mobile.svg);
+        margin-top: var(--sp-40);
+    }
+
+    .light-blue-section {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: var(--sp-30);
+        align-items: center;
+    }
+
+    .section-2-text-details {
+        order: 2;
+    }
+
+    .section-2-directions {
+        margin: 20px auto;
+    }
+
+    .quote-container {
+        text-align: left;
+    }
+
+    .quote-container h1 {
+        font-size: var(--fs-body-paragraphs);
+        font-weight: var(--fw-level-700);
+    }
+
+    .selection-3 {
+        gap: var(--sp-20);
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .selection-3 input {
+        width: 100%;
+    }
+
+    .selection-3 button {
+        width: 100%;
+    }
+
+    footer .footer-container {
+        margin-top: var(--sp-10);
+        display: flex;
+        flex-direction: column;
+        gap: var(--sp-20);
+}
+
+    .part4  {
+        text-align: center;
+    }
+  }
